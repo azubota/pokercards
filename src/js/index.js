@@ -4,7 +4,6 @@ import "../style/index.scss";
  *  1) Here are all the variables to be used in the conditions
  */
 function render(variables = {}) {
-  
   /**
    *  2) The conditional rendering logic starts here
    */
@@ -25,7 +24,11 @@ function render(variables = {}) {
           <h2>${variables.role}</h2>
           <h3>${variables.city}, ${variables.country}</h3>
           <ul class="position-right">
-            <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>
+            <li>${(
+              <a href="https://twitter.com/alesanchezr">
+                <i class="fa fa-twitter" />
+              </a>
+            )}</li>
             <li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>
             <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>
